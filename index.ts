@@ -11,7 +11,7 @@ const io = new socketIO.Server(server);
 app.use(express.json());
 
 // Serve a basic HTML page
-app.post('/iot/onCardRead', (req: Request, res: Response) => {
+app.post('/onCardRead', (req: Request, res: Response) => {
   console.log('Received card read event');
   const { cardId } = req.body;
   const user = users.find((user) => user.cardId === cardId);
