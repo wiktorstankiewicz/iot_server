@@ -32,7 +32,7 @@ io.on('connection', (socket: Socket) => {
 });
 
 // Start the server
-const PORT = Number.parseInt(process.env.PORT|| "3000")
+const PORT = Number.parseInt(process.env.PORT|| "8003")
 server.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
